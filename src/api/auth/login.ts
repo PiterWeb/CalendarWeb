@@ -1,0 +1,28 @@
+import apiUrl from "../apiUrl";
+import type responseModel from "../../models/responseModel";
+
+const login = async (username: string, password: string) => {
+  const res = await fetch(`${apiUrl}/login`, {
+    method: "POST",
+    credentials: "include",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      username,
+      password,
+    }),
+  });
+
+  const response: Promise<responseModel> = await res.json();
+
+  const data: responseModel = await response;
+
+  if (data.status === "error") {
+    throw data.message;
+  }
+
+  return data.status;
+};
+
+export default login;
