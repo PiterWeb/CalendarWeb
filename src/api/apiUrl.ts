@@ -1,3 +1,3 @@
-const apiUrl:string = 'http://127.0.0.1:8080/api';
+const apiUrl:string = 'https://calendarwebserver.herokuapp.com/api';
 
 export default apiUrl; 
