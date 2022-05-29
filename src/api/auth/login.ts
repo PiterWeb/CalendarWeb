@@ -7,6 +7,7 @@ const login = async (username: string, password: string) => {
     credentials: "include",
     headers: {
       "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
     },
     body: JSON.stringify({
       username,

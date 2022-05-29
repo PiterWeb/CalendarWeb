@@ -4,7 +4,7 @@ const fetchDeleteEvent = async (id: string) => {
   const res = await fetch(`${apiUrl}/user/deleteEventById?id=${id}`, {
     method: "DELETE",
     headers: {
-      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
     },
     credentials: "include",
   });
