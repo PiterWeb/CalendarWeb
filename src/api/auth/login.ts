@@ -2,7 +2,7 @@ import apiUrl from "../apiUrl";
 import type responseModel from "../../models/responseModel";
 
 const login = async (username: string, password: string) => {
-  const res = await fetch(`https://cors-anywhere.herokuapp.com/${apiUrl}/login`, {
+  const res = await fetch(`${apiUrl}/login`, {
     method: "POST",
     credentials: "include",
     headers: {
