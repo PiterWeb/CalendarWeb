@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className={divStyle}>
-      <h1 className={h1Style}>Cross-Calendar</h1>
+      <h1 className={h1Style}>CalendarWEB</h1>
 
       <Stack
         direction="row"
