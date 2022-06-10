@@ -14,7 +14,7 @@ You need NodeJS and NPM installed and them run:
 
 ## Technologies used 📘
 
-### React ( Vite + Typescript) 🧪
+### React ( Vite + Typescript ) 🧪
 
 -  Emotion 🎨 (CSS)
 -  MaterialUI 👷‍♂️ (UI Components)
